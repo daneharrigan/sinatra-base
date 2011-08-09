@@ -22,9 +22,4 @@ in `app/controllers` gets loaded automatically.
 
 I didn't commit the `Gemfile.lock` intentionally so you'll need to run
 `bundle`. This way you'll always get the latest version of the gems
-used.
-
-Next you want Compass to watch the project `compass watch sinatra-base`.
-Keep this running in a terminal window.
-
-Finally in a second terminal window launch the app `bundle exec rackup`
+used. Launch the app and get started `bundle exec rackup`

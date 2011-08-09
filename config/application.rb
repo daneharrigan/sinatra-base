@@ -3,10 +3,10 @@ class Application < Sinatra::Base
   helpers Custom::HtmlTags
 
   set :views,  "app/views"
-  set :haml,   format: :html5, attr_wrapper: '"'
-  set :scss,   views: "app/stylesheets"
-  set :coffee, views: "app/javascripts"
   set :public, "public"
+  set :haml,   format: :html5, attr_wrapper: '"'
+  set :coffee, views: "app/javascripts"
+  set :scss,   {views: 'app/stylesheets'}.merge(Compass.sass_engine_options)
 
   def self.root
     File.expand_path File.dirname(__FILE__) + '/..'

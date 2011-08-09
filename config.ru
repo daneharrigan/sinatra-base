@@ -8,8 +8,8 @@ require 'compass'
 
 # application specific
 require 'app/helpers/custom/html_tags'
-require 'config/application'
 require 'config/compass'
+require 'config/application'
 require 'config/controllers'
 
 run Application

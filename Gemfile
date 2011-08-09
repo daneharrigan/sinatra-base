@@ -5,4 +5,7 @@ gem 'haml'
 gem 'sass'
 gem 'coffee-script'
 gem 'compass'
-gem 'ruby-debug19'
+
+group :development do
+  gem 'ruby-debug19'
+end

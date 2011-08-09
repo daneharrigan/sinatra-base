@@ -2,6 +2,10 @@
 %html
   %head
     = stylesheet '/stylesheets/application.css'
+    /= stylesheet '/stylesheets/screen.css'
+    /= stylesheet '/stylesheets/print.css'
+    /[if IE]
+      = stylesheet '/stylesheet/ie.css'
     = javascript '/javascripts/application.js'
   %body
     %header
@@ -14,3 +18,4 @@
         %li Sass (using SCSS)
         %li CoffeeScript
         %li Haml
+        %li Compass

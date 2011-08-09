@@ -1,8 +1,12 @@
+@import "compass";
+
 body {
   font: 16px/1.5em Helvetica, Arial, sans-serif;
 }
 
 h1 {
-  background: #eee;
   padding: 10px 20px;
+  color: #666;
+  @include text-shadow(rgba(#fff, 0.7) 0 -1px 0);
+  @include background-image(linear-gradient(#333, #111));
 }
